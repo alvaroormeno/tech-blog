@@ -3,7 +3,7 @@ async function editFormHandler(event) {
 
   const title = document.querySelector('input[name="post-title"]').value.trim();
 
-  const description = document.getElementById('post-description').value.trim();
+  // const description = document.getElementById('post-description').value.trim();
 
   const id = window.location.toString().split('/')[
     window.location.toString().split('/').length - 1
@@ -12,7 +12,7 @@ async function editFormHandler(event) {
     method: 'PUT',
     body: JSON.stringify({
       title,
-      description
+      // description
     }),
     headers: {
       'Content-Type': 'application/json'
